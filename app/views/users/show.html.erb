@@ -1,0 +1,8 @@
+<h1>Profile</h1>
+
+<%= @user.username %>
+<%= @user.age %>
+<%= Post.where(user_id: @user[:id]) %>
+<%= Post.where(user_id: @user[:id]).last %>
+<br>
+<%= link_to "homepage", root_path %>
